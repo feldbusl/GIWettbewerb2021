@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[ngerman]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=15pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+%\fancyhead[C]{Running title $\bullet$ May 2016 $\bullet$ Vol. XXI, No. 1} % Custom header text
+\fancyfoot[CO,CE]{\thepage} % Custom footer text
+
+\usepackage{graphicx}
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Tabellenkalkulation mit EduScrum in der Berufsschule -- selbstorganisiert und selbstwirksam?} % Article title
+\author{%
+\textsc{Leonie Feldbusch, Felicitas Ritter} \\[1ex] % Your name
+%\normalsize Max-Weber-Schule Freiburg \\ % Your institution
+\normalsize \href{mailto:leonie@f-feldbusch.de}{leonie@f-feldbusch.de},\href{mailto:felicitas@ritter.de}{felicitas@ritter.de} % Your 
+}
+\date{\today} % Leave empty to omit a date
+%\renewcommand{\maketitlehookd}{%
+%\begin{abstract}
+%\noindent Hier schreibe ich meine Zusammenfassung. % Dummy abstract text - replace \blindtext with your abstract text
+%\end{abstract}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Projektidee}
+
+\textit{Die Schülerinnen und Schüler wenden Funktionen eines Tabellenkalkulationsprogramms zur Datenbeschreibung, Datenaufarbeitung und Datenanalyse an. Sie werten Daten zur Lösung von realen Problemstellungen aus.} -- \cite{BP}
+
+Tabellenkalkulation wird an den beruflichen Gymnasien Baden-Württemberg (AG, EG, SGG, WG) in der Eingangsklasse in Informatik unterrichtet. Das Thema wird meist zu Beginn des Schuljahrs unterrichtet, wenn die Schüler*innen sich noch nicht sehr gut kennen. Die Idee zu der durchgeführten Unterrichtseinheit war daher schnell geboren: Die Schüler*innen erstellen in Gruppen eine Umfrage, um sich besser kennenzulernen. Diese Umfrage wird mit Methoden der Tabellenkalkulation ausgewertet und anschließend vorgestellt. Damit alle Schüler*innen bei Abschluss des Projekts alle Lernziele erreichen, wurde die Methode EduScrum verwendet.
+
+%------------------------------------------------
+
+\section{Die Methode EduScrum}
+
+EduScrum ist eine Wortschöpfung aus den Wörtern Education und Scrum. Es transferiert die agilen Projektarbeitsmethoden aus Scrum auf das Lernen in der Schule. \cite{guide} haben einen EduScrum-Guide geschrieben, in dem die Methode EduScrum beschrieben wird. Wir skizzieren hier nur einige wichtige Punkte.
+
+Ein EduScrum-Sprint besteht aus vier Phasen. In der ersten Phase, dem Sprint Planning, werden die Gruppen à vier Schüler*innen eingeteilt. Die Lehrkraft gibt die Lernziele vor. Wie die Lernziele im Verlauf genau erreicht werden, bleibt den Schüler*innen überlassen. Im Sprint Planning legen die Gruppen eine \textit{Definition of Fun} und eine \textit{Definition of Done} fest. Erstere legt fest, wann die Gruppenmitglieder Spaß beim Lernen empfinden, letztere wann Sie eine Aufgabe als erledigt ansehen. Anschließend werden die ersten Aufgaben, die bis zur nächsten Besprechung im Stand Up erledigt werden sollen, verteilt. Die Verteilung wird ins Flip, einer Art ScrumBoard, eingetragen. Dieses gibt einen Überblick über den aktuellen Arbeitsstand. Die Stand Ups beinhalten jeweils eine kurze Besprechung von etwa fünf Minuten und werden zu Beginn jeder Unterrichts(doppel)stunde durchgeführt. Sie schließen eine Arbeitsphase an. Bei den Besprechungen werden die Aufgaben neu verteilt. Es gibt mehrere Stand Ups, bis das Projekt zu einem Abschluss kommt. Zum Abschluss des Projekts werden einerseits die Ergebnisse des Projekts präsentiert (Review), aber es werden auch die Zusammenarbeit in der Gruppe kritisch reflektiert und die Arbeitsweisen für nachfolgende Gruppenarbeiten angepasst.
+
+%------------------------------------------------
+
+\section{Durchführung}
+
+Die Unterrichtseinheit zur Tabellenkalkulation mit EduScrum wurde an der Max-Weber-Schule Freiburg in Baden-Württemberg in einer Eingangsklasse des Wirtschaftsgymnasiums von Leonie Feldbusch durchgeführt. Für die Durchführung standen fünf Doppelstunden zur Verfügung, es wurden alle Inhalte des Bildungsplans abgedeckt, abgesehen von WENN-Funktionen, bedingter Formatierung und SVERWEIS. Die Durchführung fand im Oktober 2020 statt, und war daher bis auf die Einführungsstunde auch so geplant, dass ein Wechsel in den Fernunterricht möglich war, auch wenn er zum Glück nicht benötigt wurde.
+
+Es wurde das LMS Moodle verwendet, um Materialien bereit zu stellen. Für das Flip wurde die Open-Source-Software Taskboard (\url{https://github.com/kiswa/TaskBoard}) auf einem eigenen Server gehostet. Als Tabellenkalkulationssoftware wurde ExcelOnline verwendet, was die Möglichkeit zum gleichzeitigen Arbeiten an einem einzelnen Dokument bietet.
+
+EduScrum gibt den Schüler*innen zwar die Lernziele vor, aber nicht wie diese erreicht werden sollen. Das wurde den Schüler*innen daher freigestellt, es wurden allerdings Materialpakete bereitgestellt, die sie verwenden durften. Ein Paket bestand aus Informationsblättern mit Screenshots, ein weiteres aus Videos, die die Lehrkraft selbst erstellt hat, und die anderen beiden aus externen Materialien beziehungsweise einem Link zur offiziellen Excel-Hilfeseite.
+
+In der ersten Doppelstunde wurde mit einem für Schüler*innen abgewandelten Lego4Scrum~\cite{lego} die Methode EduScrum handlungsorientiert eingeführt und ein kompletter Sprint im Schnelldurchlauf durchgespielt. In den nächsten drei Doppelstunden arbeiteten die Gruppen an ihrem Umfrageprojekt und in der letzten Doppelstunde wurden Review und Retrospektive durchgeführt. 
+
+%------------------------------------------------
+
+\section{Untersuchung und Ergebnisse}
+
+Die Unterrichtseinheit wurde insbesondere auf zwei Kompetenzen hin untersucht: Die Selbstorganisation und die Selbstwirksamkeit. Dazu wurden die Schüler*innen nach Ende des Projekts mit einem Fragebogen befragt. Die Auswertung des Fragebogens ergab, dass die Schüler*innen mit EduScrum selbstorganisiert lernen konnten, auch wenn EduScrum nicht als kausal für Selbstorganisation angesehen wurde. Bei der Selbstwirksamkeit konnte gesehen werden, dass die Schüler*innen sich alle in diesem Projekt mit EduScrum als selbstwirksam erlebt haben. Insbesondere hatten fast alle Schüler*innen Spaß bei der Bearbeitung des Projekts.
+
+\section{Beobachtungen}
+
+Es ist aufgefallen, dass die Schüler*innen in den Arbeitsphasen mit Eifer und Spaß an ihrem Projekt gearbeitet haben. Das Flip hat ihnen einen guten Überblick über die zu erreichenden Lernziele und Aufgaben gegeben und wurde von den Schüler*innen auch sehr gelobt. Besonders gut gefallen hat uns die Idee der Definition of Fun, bei der die Schüler*innen sich überlegten, wann sie Spaß am Lernen haben und ihre Erkenntnisse in eine für sie lernförderliche Umgebung umwandelten. Spannend war auch der Einsatz einer Retrospektive um das gemeinsame Arbeiten zu reflektieren. Interessant ist, dass der Einsatz von EduScrum nicht in allen Lernumgebungen so gut zu funktionieren scheint, wie Felicitas Ritter an der Gemeinschaftsschule Herrischried feststellte.
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[Bildungsplan Informatik BG BW, 2019]{BP}
+Ministerium für Kultus, Jugend und SportBaden-Württemberg (2019)
+\newblock Bildungsplan für das berufliche Gymnasium der dreijährigen Aufbauform -- Informatik
+
+\bibitem[Delhij et al., 2015]{guide}
+Delhij, Arno and van Solingen, Rini and Wijnands, Willy (2015)
+\newblock The eduScrum Guide
+\newblock \url{https://eduscrum.com.ru/wp-content/uploads/2020/01/The_eduScrum-guide-English_2.0_update_21-12-2019.pdf}
+
+\bibitem[Krivitsky, 2011]{lego}
+  Krivitsky, Alexey (2011)
+  \newblock A Multi-Team, Full-Cycle, Product-Oriented Scrum Simulation with LEGO Bricks
+  \newblock \url{https://hacerlobien.net/lego/Otr-005-Scrum-Simulation.pdf}
+
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
